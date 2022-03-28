@@ -53,7 +53,7 @@ class Background:
     # Method to get a new scroll speed if needed (i.e. player gains a boost)
     def get_new_scroll_speed(self, scaler):
         new_scroll_speed = self.scroll_speed * scaler
-        return(new_scroll_speed)
+        return new_scroll_speed
 
 
 # Class made to handle the player scoreboard
@@ -66,13 +66,13 @@ class ScoreBoard:
     def __init__(self, score):
         self.score = score
 
+    # TODO: fill this function in
     def display(self):
+        pass
 
+    # TODO: fill this function in
     def update(self):
-
-
-
-
+        pass
 
 
 

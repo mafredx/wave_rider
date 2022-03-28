@@ -32,7 +32,7 @@ class Rider(pg.sprite.Sprite):
 
     # User input control methods for position of wave rider
     def amplitude_control(self):
-
+        pass
 
 # Class made to handle the blips (lil sound bytes that the player scores points from)
 class Blip(pg.sprite.Sprite):
@@ -48,10 +48,11 @@ class Blip(pg.sprite.Sprite):
 
     #TODO: figure out what is needed for this class object's update method
     def update(self):
+        pass
 
     # Method to make token hover slightly up and down on the screen
     def hover(self):
-
+        pass
 
     # Method to make a sound when the player comes in contact with a blip
     def make_sound(self, sound_file, random=False):
@@ -61,9 +62,9 @@ class Blip(pg.sprite.Sprite):
         else:
             lr.load_sound(sound_file)
 
-    # Method to add blip score value to player's game scoreboard
+    # Method to add blip score value to player's game scoreboard (TODO: fill this in)
     def add_score(self):
-
+        pass
 
 
 

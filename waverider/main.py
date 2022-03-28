@@ -36,6 +36,7 @@ if not pg.mixer:
 # Initialize game directory
 main_directory = os.path.split(os.path.abspath(__file__))[0]
 
+
 # Main game execution function
 def main():
 
