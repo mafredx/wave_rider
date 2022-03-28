@@ -6,8 +6,9 @@ Wave Rider -- global_variables.py
 Author: Mike Fredricks
 Genesis: 2/13/22
 """
-import os, random
-import global_variables as gv
+import os
+import random
+from waverider.Module import global_variables as gv
 import pygame as pg
 
 # Function made to load an image from Resources and return image object

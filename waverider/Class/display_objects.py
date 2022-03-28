@@ -9,7 +9,7 @@ Genesis: 3/6/22
 """
 
 import pygame as pg
-from Module import load_resources as lr
+from waverider.Module import load_resources as lr
 import math
 
 
@@ -21,7 +21,7 @@ class Background:
     Attributes: scroll_speed
     """
     def __init__(self):
-        self.bg_image = lr.load_image('Wave_Land_1')        #TODO: create background image named 'Wave_Land_1'
+        self.bg_image = lr.load_image('Wave_Land_1.png')
         self.bg_rect = self.bg_image.get_rect()
 
         self.bg_x1 = 0

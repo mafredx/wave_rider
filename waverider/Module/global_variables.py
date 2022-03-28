@@ -7,7 +7,7 @@ Author: Mike Fredricks
 Genesis: 2/13/22
 """
 import os
-import main
+import waverider.main as main
 
 
 # Define global directories

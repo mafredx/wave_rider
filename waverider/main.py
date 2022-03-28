@@ -9,7 +9,8 @@ Genesis: 2/13/2022
 """
 import sys
 import logging
-from Module import global_variables as gv
+from waverider.Module import global_variables as gv
+from waverider.Class import display_objects as do
 
 logger = logging.getLogger(__name__)
 

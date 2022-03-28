@@ -9,7 +9,7 @@ Genesis: 2/13/22
 """
 
 import pygame as pg
-from Module import load_resources as lr
+from waverider.Module import load_resources as lr
 import math
 
 # Class made to handle all behaviors of the game's player character, wave rider
