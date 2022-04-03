@@ -43,10 +43,11 @@ def main():
 
     # Initialize pygame and create popout window
     pg.init()
-    screen = pg.display.set_mode((1280, 720), pg.SCALED)
+    screen = pg.display.set_mode((640, 360), pg.SCALED)
     screen.fill(gv.black)
     pg.display.set_caption("Wave Rider")
-    pg.mouse.set_visible(False)
+    pg.mouse.set_visible(True)
+    background = do.Background()
 
     # Create and set game clock
     clock = pg.time.Clock()
@@ -64,6 +65,8 @@ def main():
                 clock_going = False
 
         # TODO: Draw everything onto screen
+        background.render()
+        background.update()
 
     # Pump out old events, and keep the queue current
     pg.event.pump()
