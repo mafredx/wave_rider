@@ -48,6 +48,7 @@ def main():
     pg.display.set_caption("Wave Rider")
     pg.mouse.set_visible(True)
     background = do.Background()
+    background.render()
 
     # Create and set game clock
     clock = pg.time.Clock()
@@ -65,8 +66,9 @@ def main():
                 clock_going = False
 
         # TODO: Draw everything onto screen
-        background.render()
         background.update()
+        background.render()
+        pg.display.flip()
 
     # Pump out old events, and keep the queue current
     pg.event.pump()
