@@ -48,6 +48,9 @@ def main():
     pg.display.set_caption("Wave Rider")
     pg.mouse.set_visible(False)
 
+    # Initialize game display objects -- TODO: figure out how to get this background properly displaying
+    background = do.Background()
+
     # Create and set game clock
     clock = pg.time.Clock()
     clock_going = True
