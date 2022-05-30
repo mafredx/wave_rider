@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fb69df7e-ddc3-491e-a46b-54a3419beb63" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/waverider/Class/interactive_objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/waverider/Class/interactive_objects.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/waverider/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/waverider/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
