@@ -11,6 +11,7 @@ import sys
 import logging
 from waverider.Module import global_variables as gv
 from waverider.Class import display_objects as do
+from waverider.Class import interactive_objects as int_obj
 
 logger = logging.getLogger(__name__)
 
@@ -43,10 +44,18 @@ def main():
 
     # Initialize pygame and create popout window
     pg.init()
-    screen = pg.display.set_mode((1280, 720), pg.SCALED)
+    screen = pg.display.set_mode((640, 360), pg.SCALED)
     screen.fill(gv.black)
     pg.display.set_caption("Wave Rider")
-    pg.mouse.set_visible(False)
+    pg.mouse.set_visible(True)
+
+    # Create background object
+    background = do.Background()
+    background.render()
+
+    # Create game sprite objects
+    rider = int_obj.Rider()
+    allsprites = pg.sprite.RenderPlain((rider))
 
     # Initialize game display objects -- TODO: figure out how to get this background properly displaying
     background = do.Background()
@@ -66,7 +75,14 @@ def main():
             elif event.type == pg.KEYDOWN and event.key == pg.K_ESCAPE:
                 clock_going = False
 
-        # TODO: Draw everything onto screen
+        # Update all objects
+        background.update()
+        allsprites.update()
+
+        # Draw everything to screen
+        background.render()
+        allsprites.draw(screen)
+        pg.display.flip()
 
     # Pump out old events, and keep the queue current
     pg.event.pump()

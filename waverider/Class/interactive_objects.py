@@ -16,22 +16,38 @@ import math
 class Rider(pg.sprite.Sprite):
     """
     Returns: rider object
-    Methods: update, amplitude_control
+    Methods: update, render, amplitude_control
     Attributes: area
     """
     def __init__(self):
         pg.sprite.Sprite.__init__(self)
+        self.image, self.rect = lr.load_image("Rider.png")
         screen = pg.display.get_surface()
         self.area = screen.get_rect()
-        self.amplitude = 1
+        self.rect.center = self.area.right/4 , self.area.bottom/2
+        self.amplitude = 100
+        self.wavelength = 100
+        self.velocity =
         self.state = 'sine'
 
     def update(self):
-        new_position = self.get_new_position(self.rect, self.y_speed)
-        self.rect = new_position
+        if self.state == 'sine' and self.rect.centery < self.amplitude:
 
-    # User input control methods for position of wave rider
+
+        #new_position = self.get_new_position(self.rect, self.y_speed)
+        #self.rect = new_position
+
+    # Function to return position of sinusoidal motion
+    def sine_motion(self, time):
+        y_pos = self.amplitude * math.sin(2*math.pi*self.frequency*time/1000)
+
+
+    # User input control method for amplitude of wave rider's wave
     def amplitude_control(self):
+        pass
+
+    # User input control methods for frequency of wave rider's wave
+    def frequency_control(self):
         pass
 
 # Class made to handle the blips (lil sound bytes that the player scores points from)

@@ -21,8 +21,7 @@ class Background:
     Attributes: scroll_speed
     """
     def __init__(self):
-        self.bg_image = lr.load_image('Wave_Land_1.png')
-        self.bg_rect = self.bg_image.get_rect()
+        self.bg_image, self.bg_rect = lr.load_image('Wave_Land_1.png')
 
         self.bg_x1 = 0
         self.bg_y1 = 0
@@ -30,7 +29,7 @@ class Background:
         self.bg_x2 = self.bg_rect.width
         self.bg_y2 = 0
 
-        self.initial_scroll_speed = 5
+        self.initial_scroll_speed = 1
         self.scroll_speed = self.initial_scroll_speed       #TODO: figure out relative speed values
 
     # Method to reset background variables to original states
